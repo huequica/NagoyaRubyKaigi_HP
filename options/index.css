@@ -1,0 +1,13 @@
+.hero {
+  align-items: center;
+}
+
+#Top_Title {
+  font-size: 3.5rem;
+
+}
+
+#Top_SubTitle {
+  font-size:1rem;
+  text-align: right;
+}
