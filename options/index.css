@@ -1,5 +1,5 @@
 html {
-  background-color: #F5F5F5;
+  background-color: #e0e0e0;
 }
 
 .hero {
@@ -37,10 +37,35 @@ h1.with-SectionBar {
   padding-top: 10px;
   padding-left: 10px;
 }
+
+h1#Access {
+  padding-bottom: 10px;
+}
+
 iframe {
   width:800px;
   height: 600px;
 }
+
 th, td {
   font-size: 1.5rem;
+}
+
+article.message {
+  width: auto;
+  margin-top: 30px;
+}
+
+div.message-body > h1 {
+  color: #22509a;
+}
+
+div.message-body > h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.message-body > hr {
+  background-color: #22509a;
 }
