@@ -1,13 +1,38 @@
+html {
+  background-color: #F5F5F5;
+}
+
 .hero {
   align-items: center;
 }
 
 #Top_Title {
+  padding-top: 140px;
   font-size: 3.5rem;
-
 }
 
 #Top_SubTitle {
-  font-size:1rem;
+  font-size: 1.5rem;
   text-align: right;
+  padding-bottom: 140px;
+
+}
+#Top_Date {
+  font-size: 2rem;
+}
+
+figure.image {
+  width: 200px;
+}
+
+
+h1.with-GradationBar {
+  align-self: center;
+  width: 500px;
+  height: 48px;
+  background:#003A8A;
+  color: #FFFFFF;
+
+  padding-top: 6px;
+  padding-left: 6px;
 }
