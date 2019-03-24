@@ -7,7 +7,7 @@ html {
 }
 
 #Top_Title {
-  padding-top: 140px;
+  padding-top: 100px;
   font-size: 3.5rem;
 }
 
@@ -25,14 +25,22 @@ figure.image {
   width: 200px;
 }
 
-
-h1.with-GradationBar {
+h1.with-SectionBar {
+  margin-top: 60px;
   align-self: center;
-  width: 500px;
+  width: 80vw;
   height: 48px;
   background:#003A8A;
   color: #FFFFFF;
+  font-size: calc(120% + 0.5vw);
 
-  padding-top: 6px;
-  padding-left: 6px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+iframe {
+  width:800px;
+  height: 600px;
+}
+th, td {
+  font-size: 1.5rem;
 }
