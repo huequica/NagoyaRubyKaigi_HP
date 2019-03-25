@@ -27,7 +27,6 @@ figure.image {
 
 h1.with-SectionBar {
   margin-top: 60px;
-  align-self: center;
   width: 80vw;
   height: 48px;
   background:#003A8A;
@@ -48,7 +47,7 @@ iframe {
 }
 
 th, td {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 article.message {
@@ -68,4 +67,39 @@ div.message-body > h2 {
 
 div.message-body > hr {
   background-color: #22509a;
+}
+
+div#sponsors {
+  height: 190px;
+  text-align: center;
+}
+
+img.sponsors {
+  width: 300px;
+}
+
+img.is-pepabo {
+  margin-top: 10px;
+}
+
+
+h1.title.is-cookpad {
+  margin-bottom: 12px;
+}
+
+
+h1.title.is-spice_life {
+  margin-bottom: 16px;
+}
+
+img.is-spice_life {
+  width: 165px;
+}
+
+#space {
+  height: 60px;
+}
+
+footer {
+  background-color: white;
 }
