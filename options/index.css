@@ -25,7 +25,7 @@ figure.image {
   width: 200px;
 }
 
-span.icon {
+div.level-left > a > span.icon {
   font-size: 30px;
   margin-left: 10px;
 }
