@@ -103,3 +103,8 @@ img.is-spice_life {
 footer {
   background-color: white;
 }
+
+img.with-bulma {
+  width: 192px;
+  height: 36px;
+}
