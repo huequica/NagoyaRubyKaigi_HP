@@ -25,6 +25,11 @@ figure.image {
   width: 200px;
 }
 
+span.icon {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
 h1.with-SectionBar {
   margin-top: 60px;
   width: 80vw;
