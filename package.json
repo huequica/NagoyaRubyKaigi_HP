@@ -1,0 +1,8 @@
+{
+  "name": "nagoyarubykaigi_hp",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.7.4"
+  }
+}
