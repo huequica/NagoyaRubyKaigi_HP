@@ -1,6 +1,9 @@
 {
   "name": "nagoyarubykaigi_hp",
   "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {},
   "devDependencies": {
     "bulma": "^0.7.4",
