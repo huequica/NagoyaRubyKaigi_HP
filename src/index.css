@@ -1,14 +1,18 @@
-html {
-  background-color: #e0e0e0;
+html { /* html全体に対する背景の色つけ */
+  background-color: #fdffe8;
 }
 
-.hero {
+body, code { /* フォントの指定 */
+  font-family:  "Sawarabi Mincho", sans-serif;
+}
+
+.hero { /* ヘッダー部分の調整 */
   align-items: center;
   background-image: url("https://pbs.twimg.com/media/D2lQoX5VYAAn47v.jpg");
   background-size: cover;
   background-position: center;
 }
-.hero::before{
+.hero::before{ /* ヘッダーの上にかぶせてる透過グレーの専用属性 */
   background-color: #000;
   opacity: 0.7;
   position: absolute;
@@ -20,39 +24,44 @@ html {
 	content: ' ';
 }
 
-.hero-body {
+.hero-body { /* フォント部分のみ上側に出るように指定 */
   position: relative;
 }
 
-#Top_Title {
+div.hero-body > div >  * { /* フォント部分の基礎色付け */
+  color: #FFFFFF;
+}
+
+#Top_Title { /* ヘッダーの一番上の間隔、大きさの指定 */
   padding-top: 100px;
   font-size: 3.5rem;
 }
 
-#Top_SubTitle {
+#Top_SubTitle { /* ヘッダーの真ん中の大きさ、間隔を空けるようにしてる */
   font-size: 1.5rem;
   text-align: right;
   padding-bottom: 140px;
-
 }
-#Top_Date {
+
+#Top_Date { /* ヘッダーの一番下、日付の情報 */
   font-size: 2rem;
 }
 
-figure.image {
+figure.image { /* 特別講演欄のbox内の画像 */
   width: 200px;
 }
 
-div.level-left > a > span.icon {
+div.level-left > a > span.icon { /* TwitterとGitHubのアイコンボタン */
   font-size: 30px;
   margin-left: 10px;
+  color: #B44C97;
 }
 
-h1.with-SectionBar {
+h1.with-SectionBar { /* セクション分け */
   margin-top: 60px;
   width: 80vw;
   height: 48px;
-  background:#003A8A;
+  background:#F39800;
   color: #FFFFFF;
   font-size: calc(120% + 0.5vw);
 
@@ -60,26 +69,30 @@ h1.with-SectionBar {
   padding-left: 10px;
 }
 
-h1#Access {
+h1#Access { /* アクセス段落のh1 */
   padding-bottom: 10px;
 }
 
-iframe {
+iframe { /* GoogleMap */
   width:800px;
   height: 600px;
 }
 
-th, td {
+th, td { /* 概要の表部分 */
   font-size: 1.2rem;
 }
 
-article.message {
+article.message { /* タイムテーブルの時間別項目 */
   width: auto;
   margin-top: 30px;
 }
 
+div.message-body {
+  background-color: #FEFEFE;
+}
+
 div.message-body > h1 {
-  color: #22509a;
+  color: #82AE46;
 }
 
 div.message-body > h2 {
@@ -89,31 +102,32 @@ div.message-body > h2 {
 }
 
 div.message-body > hr {
-  background-color: #22509a;
+  background-color: #82AE46;
 }
 
-div#sponsors {
+div#sponsors { /* スポンサーのbox */
   height: 190px;
   text-align: center;
 }
 
-div#sponsors:hover {
-  background-color: #87ceeb;
+div#sponsors:hover { /* スポンサーのboxにホバーしたときの色変更 */
+  background-color: #FEF4F4;
 }
 
-img.sponsors {
+img.sponsors { /* スポンサーのboxのコーポレート画像 */
   width: 300px;
 }
 
+
+
+/* ここから下各企業ごとの専用クラス */
 img.is-pepabo {
   margin-top: 10px;
 }
 
-
 h1.title.is-cookpad {
   margin-bottom: 12px;
 }
-
 
 h1.title.is-spice_life {
   margin-bottom: 16px;
@@ -123,12 +137,13 @@ img.is-spice_life {
   width: 165px;
 }
 
-#space {
+/* ここまで */
+
+#space { /* 懇親会とお問い合わせ先の間隔調整 */
   height: 60px;
 }
 
-
-img.with-bulma {
+img.with-bulma { /* Made with BULMAのアイコンの大きさ指定 */
   width: 192px;
   height: 36px;
 }
