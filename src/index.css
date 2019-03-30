@@ -8,7 +8,7 @@ body, code { /* フォントの指定 */
 
 .hero { /* ヘッダー部分の調整 */
   align-items: center;
-  background-image: url("https://pbs.twimg.com/media/D2lQoX5VYAAn47v.jpg");
+  background-image: url("https://magazine.rubyist.net/images/0056-NagoyaRubyKaigi03Report/C4WLtXDVUAE1g_w_r.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -85,6 +85,10 @@ th, td { /* 概要の表部分 */
 article.message { /* タイムテーブルの時間別項目 */
   width: auto;
   margin-top: 30px;
+}
+
+article.message.is-success  > div.message-header {
+  background-color: #006400;
 }
 
 div.message-body {
