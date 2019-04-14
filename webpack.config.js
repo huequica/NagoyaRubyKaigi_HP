@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   module: {
+
     rules: [
       {
         test: /\.scss$/,
@@ -18,6 +19,18 @@ module.exports = {
             'sass-loader'
           ]
         })
+      },
+      {
+        test: /\.(gif|png|jpg|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            // options: {
+            //   limit: 51200,
+            //   name: "./assets/[name].[ext]"
+            // }
+          }
+        ]
       }
     ]
   },

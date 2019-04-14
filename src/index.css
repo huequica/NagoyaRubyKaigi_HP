@@ -8,7 +8,8 @@ body, code { /* フォントの指定 */
 
 .hero { /* ヘッダー部分の調整 */
   align-items: center;
-  background-image: url("https://farm1.staticflickr.com/487/32041250893_c4504a67e8_o_d.jpg");
+  background-image: url("./assets/hero_back.jpg");
+
   background-size: cover;
   background-position: center;
 }
@@ -109,12 +110,12 @@ div.message-body > hr {
   background-color: #82AE46;
 }
 
-div#sponsors { /* スポンサーのbox */
+div.sponsors { /* スポンサーのbox */
   height: 190px;
   text-align: center;
 }
 
-div#sponsors:hover { /* スポンサーのboxにホバーしたときの色変更 */
+div.sponsors:hover { /* スポンサーのboxにホバーしたときの色変更 */
   background-color: #FEF4F4;
 }
 
@@ -129,16 +130,12 @@ img.is-pepabo {
   margin-top: 10px;
 }
 
-h1.title.is-cookpad {
-  margin-bottom: 12px;
+img.is-stmn {
+  margin-top: 10px;
 }
 
-h1.title.is-spice_life {
-  margin-bottom: 16px;
-}
-
-img.is-spice_life {
-  width: 165px;
+h1.title.is-sansan {
+  margin-bottom: 7px;
 }
 
 /* ここまで */
