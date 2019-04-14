@@ -25,6 +25,9 @@ body, code { /* フォントの指定 */
 	content: ' ';
 }
 
+span#Event-Logo > img {
+  width: 250px;
+}
 .hero-body { /* フォント部分のみ上側に出るように指定 */
   position: relative;
 }
@@ -34,14 +37,14 @@ div.hero-body > div >  * { /* フォント部分の基礎色付け */
 }
 
 #Top_Title { /* ヘッダーの一番上の間隔、大きさの指定 */
-  padding-top: 100px;
+
   font-size: 3.5rem;
 }
 
 #Top_SubTitle { /* ヘッダーの真ん中の大きさ、間隔を空けるようにしてる */
   font-size: 1.5rem;
   text-align: right;
-  padding-bottom: 140px;
+  padding-bottom: 40px;
 }
 
 #Top_Date { /* ヘッダーの一番下、日付の情報 */
