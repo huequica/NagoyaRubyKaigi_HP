@@ -8,7 +8,7 @@ body, code { /* フォントの指定 */
 
 .hero { /* ヘッダー部分の調整 */
   align-items: center;
-  background-image: url("/images/hero_back.jpg");
+  background-image: url("images/hero_back.jpg");
 
   background-size: cover;
   background-position: center;
