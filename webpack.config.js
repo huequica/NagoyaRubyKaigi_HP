@@ -24,11 +24,11 @@ module.exports = {
         test: /\.(gif|png|jpg|svg)$/,
         use: [
           {
-            loader: 'url-loader',
-            // options: {
-            //   limit: 51200,
-            //   name: "./assets/[name].[ext]"
-            // }
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
+              publicPath: path => '../' + path
+            }
           }
         ]
       }

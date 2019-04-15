@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <title>名古屋Ruby会議04</title>
@@ -22,7 +22,9 @@
 <body>
   <div class="hero is-fullheight">
     <div class="hero-body">
-      <span id="Event-Logo"></span>
+      <span id="Event-Logo">
+        <img src="<%= require('./images/Event_logo.png') %>">
+      </span>
 
       <div>
         <h1 class="title" id="Top_Title">名古屋<span style="color: #C70067;">Ruby</span><span class="Mobile_br"></span>会議04</h1>
@@ -33,75 +35,39 @@
   </div>
 
   <section class="section">
+    <!--
     <div class="container">
       <h1 class="title with-SectionBar">招待講演</h1>
       <div class="box">
         <div class="columns">
-
           <div class="column is-3">
-            <figure class="image" id="icon1">
-
-            </figure>
+            <figure class="image" id="icon1"></figure>
           </div>
-
           <div class="column">
-            <h1 class="title">Haru_Yakumo</h1>
-            <h2 class="subtitle">オタク</h2>
-
+            <h1 class="title"></h1>
+            <h2 class="subtitle"></h2>
             <div class="level-left">
-              <a target="_blank" href="https://github.com/huequica" class="level-item" aria-label="reply">
+              <a target="_blank" href="#" class="level-item" aria-label="reply">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
               </a>
-
-              <a target="_blank" href="https://twitter.com/huequica" class="level-item" aria-label="reply">
+              <a target="_blank" href="#" class="level-item" aria-label="reply">
                 <span class="icon">
                   <i class="fab fa-twitter"></i></i>
                 </span>
               </a>
             </div>
-
           </div>
         </div>
       </div>
-
-      <div class="box">
-        <div class="columns">
-
-          <div class="column is-3">
-            <figure class="image" id="icon2">
-            </figure>
-          </div>
-
-          <div class="column">
-            <h1 class="title">Haru_Yakumo</h1>
-            <h2 class="subtitle">オタク</h2>
-
-            <div class="level-left">
-              <a target="_blank" href="https://github.com/huequica" class="level-item" aria-label="reply">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-              </a>
-
-              <a target="_blank" href="https://twitter.com/huequica" class="level-item" aria-label="reply">
-                <span class="icon">
-                  <i class="fab fa-twitter"></i></i>
-                </span>
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
+      -->
 
       <h1 class="title with-SectionBar">名古屋Ruby会議04 開催概要</h1>
       <table class="table is-striped is-fullwidth">
         <tr>
           <th>日付</th>
-          <td>2019/06/08(土) 10:00 〜 18:00</td>
+          <td>2019/06/08 (土) 10:00 〜 18:00</td>
         </tr>
 
         <tr>
@@ -110,18 +76,13 @@
         </tr>
 
         <tr>
-          <th>参加費用</th>
-          <td>1,500円</td>
-        </tr>
-
-        <tr>
           <th>事前登録</th>
-          <td>まだ出来てないよ</td>
+          <td>（準備中）</td>
         </tr>
 
         <tr>
           <th>定員</th>
-          <td>知らん！</td>
+          <td>約100名</td>
         </tr>
 
       </table>
@@ -142,197 +103,42 @@
       </div>
 
       <h1 class="title with-SectionBar">タイムテーブル</h1>
+      <article class="message is-success">
+      </article>
+      <!--
         <article class="message is-success">
           <div class="message-header">
-            <p>09:30</p>
+            <p>00:00</p>
           </div>
 
           <div class="message-body">
-            <h1 class="title is-4">入場受付開始</h1>
+            <h1 class="title is-4"></h1>
+            <h2 class="subtitle"><br></h2>
           </div>
         </article>
-
-        <article class="message is-success">
-          <div class="message-header">
-            <p>10:00</p>
-          </div>
-
-          <div class="message-body">
-            <h1 class="title is-4">前説(オープニング)</h1>
-          </div>
-        </article>
-
-        <article class="message is-success">
-          <div class="message-header">
-            <p>10:10</p>
-          </div>
-          <div class="message-body">
-            <h1 class="title is-4">第一部</h1>
-
-            <h2 class="subtitle">Ruby/Railsはじめてチームの力をメキメキつけた！ (25分)<br>
-            小芝 敏明</h2>
-            今日、事業のバックエンドシステムにRubyやRailsを選択することはポピュラーな選択になっています。そしてRubyやRails未経験メンバーのみで開発チームが構成されることもよくあります。実際にそのようなチームを直接率いることになり、当初はなかなかチームの成果が上がらず苦しかったのですが、短期間で当初の数倍のスループットを出すパワフルなチームへと変貌させることができました。 その鍵は様々な技術的な工夫。とくに短期間で成果を出すためにはウェブで公開されている先達のノウハウの活用が書かせませんでした。このセッションでは、具体的にどんなノウハウをどのようなステップで導入しチームメンバーの力を伸ばしてきたかを解説します。
-
-            <hr>
-
-            <h2 class="subtitle">ぺろぺろ: Github pull request bot framework (25分)<br>
-            mzp</h2>
-            githubのpull requestに反応するbotフレームワーク: prprを紹介します。 既存のプラグインによってできること、gemによって拡張する方法を解説した上で、Misoca開発チームにおける実例も話します。
-
-            <hr>
-
-            <h2 class="subtitle">招待講演 Apache ArrowのRubyバインディングをGObject Introspectionで (60分)<br>
-            須藤 功平</h2>
-            Apache Arrowはデータ分析を支援するライブラリーです。高速にデータにアクセスできる機能を提供します。重要なのは既存の多くのデータ分析関連プロダクトがApache Arrowと連携すると表明しているところです。RubyでもApache Arrowを使えるようになるとRubyでも既存のデータ分析関連プロダクトと連携できるようになります。そうなれるようにGObject Introspectionを使ってRubyからApache Arrowを使えるようにする方法を紹介します。
-          </div>
-        </article>
-
-        <article class="message is-success">
-          <div class="message-header">
-            <p>12:20 - 13:45</p>
-          </div>
-
-          <div class="message-body">
-            <h1 class="title is-4">昼食</h1>
-          </div>
-        </article>
-
-        <article class="message is-success">
-          <div class="message-header">
-            <p>13:45</p>
-          </div>
-
-          <div class="message-body">
-            <h1 class="title is-4">第二部</h1>
-              <h2 class="subtitle">mrubyのJIT (20分)<br>
-              三浦 英樹</h2>
-              mrubyのJITはmrubyにTracing JITを付加したRubyコンパイラです。この発表ではTracing JITの概要、高速化の工夫、そして少しRuby固有の話します。
-
-              <hr>
-
-              <h2 class="subtitle">Dynamic certificate internals with ngx_mruby (30分)<br>
-              奥村 晃弘</h2>
-              動的証明書読み込み〜ngx_mruby編 (https://speakerdeck.com/hfm/gmo-hoscon-2016) の拡張版です。ngx_mrubyを使えば、Rubyを用いてプログラマブルにnginxを制御することができます。私はngx_mrubyのメンテナを務めており、実際に複数のWebサービスで運用しています。今回の発表では、ngx_mrubyの活用事例として動的証明書読み込みについてお話させていただこうと思っています。通常、Webサーバで大量ドメインの証明書を取り扱おうとすると、設定ファイルの長大化やメモリの肥大化を招いてしまうなど非効率な面が目立ちます。しかし、ngx_mrubyを用いた動的証明書読み込みなら、簡潔な設定と省メモリで実現することができます。また、動的証明書読み込みにおいてnginxやOpenSSLのAPIをどのように活用しているのか、ソースコードに触れながら内部実装への理解を深めていきます。
-
-              <hr>
-
-              <h2 class="subtitle">未来のサーバ基盤への Haconiwa/mruby の関わり - コンテナ仮想化のその先へ (30分)<br>
-              近藤 宇智朗</h2>
-              コンテナ仮想化がより一般的になると、母体であるOSのクラスタはまるで単体のOSのように見えることになるかもしれません。そうすると、コンテナはあたかもスレッド的に扱われます。その時、システムコールに相当するものは？−− 筆者は2016年、 [Haconiwa](https://github.com/haconiwa/haconiwa) という、mrubyによるLinuxコンテナランタイムをリリースしました。その開発の動機や内部実装を通して、コンテナ仮想化技術の詳細や展望、そして松本亮介氏のFastContainerアーキテクチャとの関わりや未来のサーバ基盤について語ります。Ruby/mrubyは果たして未来のサーバ基盤の「システムコール」になり得るのでしょうか？マクラで大風呂敷を広げましたが、お後のよろしいトークとなるか、ぜひご覧ください。
-
-              <hr>
-
-              <h2 class="subtitle">休憩 (15分)</h2>
-
-              <hr>
-
-              <h2 class="subtitle">Ruby で TensorFlow (15分)<br>
-              antimon2</h2>
-              Ruby でもできる DeepLearning! 話題の TensorFlow を Ruby で動かしてみる。Rails に組み込んだリアルタイム文字認識Webアプリをデモ（予定）。
-
-              <hr>
-
-              <h2 class="subtitle">Fight with growing data on Rails (25分)<br>
-              joker1007 (Tomohiro Hashidate)</h2>
-              日々スケールが増し続けるデータ量をRailsアプリケーションで、どうやって処理していくか。様々なプロダクトやサービスをRubyを使って組み合わせ対処してきた実例を基に、中規模クラスのデータと省力で戦う方法について話しをします。発表の主なターゲット層は大企業ではない会社に勤めるRuby/Railsエンジニアです。
-
-              <hr>
-
-              <h2 class="subtitle">招待講演 re: rinda (60分)<br>
-              関 将俊</h2>
-              RubyKaigi2016に京都で紹介したdRubyに続き、名古屋でRindaを再発見します。Rindaは、並列処理における糊言語 LindaのRuby実装です。プロセス間の通信、同期のメカニズムを提供します。本講演ではRinda用いたタプルとタプルスペースを用いたプログラミングを説明します。
-
-          </div>
-        </article>
-
-        <article class="message is-success">
-          <div class="message-header">
-            <p>17:45</p>
-          </div>
-
-          <div class="message-body">
-            <h1 class="title is-4">第二部</h1>
-
-            <h2 class="subtitle">スポンサーLT(5分 × 3)</h2>
-
-            <hr>
-
-            <h2 class="subtitle">大喜利(パネルディスカッション)<br>
-            TBA</h2>
-          </div>
-        </article>
-
-        <article class="message is-success">
-          <div class="message-header">
-            <p>18:30</p>
-          </div>
-
-          <div class="message-body">
-            <h1 class="title is-4">クロージング</h1>
-          </div>
-        </article>
+      -->
 
       <h1 class="title with-SectionBar">協賛</h1>
+      <!--
       <h2 class="subtitle">名古屋Ruby会議04は以下の素晴らしい会社様に協賛していただいています。ご支援ありがとうございます。</h2>
       <div class="columns">
         <div class="column">
-          <a target="_blank" href="http://agile.esm.co.jp/"><div class="box sponsors" id="esm">
-            <h1 class="title is-5">株式会社英和システムマネジメント</h1>
+          <a target="_blank" href="#"><div class="box sponsors" id="esm">
+            <h1 class="title is-5"></h1>
 
           </div></a>
         </div>
         <div class="column">
-          <a target="_blank" href="https://pepabo.com/"><div class="box sponsors" id="pepabo">
-            <h1 class="title is-5">GMOペパボ株式会社(Tシャツスポンサー)</h1>
-
-          </div></a>
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <a target="_blank" href="https://www.misoca.jp/"><div class="box sponsors" id="misoca">
-            <h1 class="title is-5">株式会社Misoca</h1>
-
-          </div></a>
-        </div>
-        <div class="column">
-          <a target="_blank" href="http://www.a-tm.co.jp/"><div class="box sponsors" id="ateam">
-            <h1 class="title is-5">株式会社エイチーム</h1>
+          <a target="_blank" href="#"><div class="box sponsors" id="pepabo">
+            <h1 class="title is-5"></h1>
 
           </div></a>
         </div>
       </div>
-
-      <div class="columns">
-        <div class="column">
-          <a target="_blank" href="https://stmn.co.jp/"><div class="box sponsors" id="stmn">
-            <h1 class="title is-5 is-stmn">スタメン株式会社</h1>
-
-          </div></a>
-        </div>
-        <div class="column">
-          <a target="_blank" href="https://www.kurusugawa.jp"><div class="box sponsors" id="kurusugawa-densan">
-            <h1 class="title is-5">有限会社 来栖川電算</h1>
-
-          </div></a>
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <a target="_blank" href="https://jp.corp-sansan.com/"><div class="box sponsors" id="sansan">
-            <h1 class="title is-5 is-sansan">Sansan株式会社</h1>
-
-          </div></a>
-        </div>
-        <div class="column">
-
-        </div>
-      </div>
+      -->
 
       <h1 class="title with-SectionBar">懇親会</h1>
-      <h2 class="subtitle">こちらより、申し込み下さい。</h2>
+      <h2 class="subtitle">（準備中）</h2>
 
       <div id="space"></div>
 
@@ -356,12 +162,11 @@
 
         <div class="column">
           <h1 class="title is-5">協賛</h1>
-          <h2 class="subtitle is-5"><a target="_blank" href="http://agile.esm.co.jp/">株式会社英和システムマネジメント</a><br>
-                                    <a target="_blank" href="https://www.misoca.jp/">株式会社Misoca</a><br>
-                                    <a target="_blank" href="https://pepabo.com/">GMOペパボ株式会社</a><br>
-                                    <a target="_blank" href="http://www.a-tm.co.jp/">株式会社エイチーム</a><br>
-                                    <a target="_blank" href="https://cookpad.com/">クックパッド株式会社</a><br>
-                                    <a target="_blank" href="https://original-lab.jp/">オリジナルラボ株式会社</a></h2>
+          <h2 class="subtitle is-5">
+            <!--
+            <a target="_blank" href="#"></a>
+            -->
+          </h2>
 
         </div>
 
