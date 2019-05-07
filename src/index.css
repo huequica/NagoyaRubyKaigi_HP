@@ -32,12 +32,18 @@ div#hero_text{
 span#Event-Logo > img {
   width: 250px;
 }
-.hero-body { /* フォント部分のみ上側に出るように指定 */
+.hero-body, .hero-foot { /* フォント部分のみ上側に出るように指定 */
   position: relative;
 }
 
 div.hero-body > div >  * { /* フォント部分の基礎色付け */
   color: #FFFFFF;
+}
+
+div.hero-foot > *{
+  color: #FFFFFF;
+  margin-top: -1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #Top_Title { /* ヘッダーの一番上の間隔、大きさの指定 */
