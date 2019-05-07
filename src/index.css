@@ -105,12 +105,20 @@ div.message-body {
 
 div.message-body > h1 {
   color: #82AE46;
+  margin-bottom:20px;
 }
 
 div.message-body > h2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
+}
+
+div.message-body > h2.subtitle > strong{
+  /*color: #4dd000;*/
+}
+
+div.message-body.is-LT > h2{
+  font-size: 1rem;
 }
 
 div.message-body > hr {
