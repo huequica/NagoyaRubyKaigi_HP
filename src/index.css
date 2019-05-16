@@ -40,14 +40,14 @@ div.hero-body > div >  * { /* フォント部分の基礎色付け */
   color: #FFFFFF;
 }
 
-div.hero-foot > *{
+div.hero-foot > div > a{
   color: #FFFFFF;
-  margin-top: -1.5rem;
+  width: 158px;
+  /* margin-top: -1.5rem; */
   margin-bottom: 1.5rem;
 }
 
 #Top_Title { /* ヘッダーの一番上の間隔、大きさの指定 */
-
   font-size: 3.5rem;
 }
 
